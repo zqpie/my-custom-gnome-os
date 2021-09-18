@@ -6,6 +6,9 @@ stdscr = curses.initscr()
 os.system('git clone https://github.com/vinceliuice/WhiteSur-gtk-theme')
 os.system('git clone https://github.com/ok9xnirab/macOs-icon-theme')
 os.system('git clone https://github.com/sandesh236/sleek--themes')
+os.system('git clone https://github.com/caglarturali/catalina-dynamic-wallpaper.git')
+os.system('cp catalina-dynamic-wallpaper/CatalinaDynamic/contents/images/hourly/16.jpg ~/Pictures')
+#os.system('sudo -i')
 curses.noecho()
 curses.cbreak()
 stdscr.keypad(True)
@@ -15,18 +18,24 @@ intro = True
 loop = True
 ui = True
 while intro:
-    print("(press e and enter to exit) First, make sure you have a .themes and .icons directory under ~")
+    print("(press e and enter to exit)")
+
     time.sleep(5)
     os.system('clear')
-    
-
-    print("Read the following to install the themes you would like")
+    print("*a new wallpaper photo has been placed in your Pictures directory")
+    time.sleep(5)
+    os.system('clear')
+    print("Hello, welcome to my distro custamzior.")
+    print("please read the following to know what options you would like to select")
     time.sleep(5)
     os.system('clear')
     print("press i to install the OSx icon theme")
     time.sleep(5)
     os.system('clear')
     print("press p to install the OSx gtk theme")
+    time.sleep(3)
+    os.system('clear')
+    print("press g to install a grub menu")
     intro = False
 
 def interface():
@@ -44,7 +53,7 @@ def interface():
         elif c == ord('g'):
             print("installing grub theme")
             time.sleep(1)
-            os.system('cd sleek--themes/'Sleek theme-dark' && sudo ./install.sh')
+            #os.system('cd sleek--themes/'Sleek theme-dark' && sudo ./install.sh')
             #interface()
         elif c == ord('e'):
             print("e")
