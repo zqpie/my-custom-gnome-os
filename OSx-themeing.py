@@ -9,6 +9,9 @@ os.system('git clone https://github.com/sandesh236/sleek--themes')
 os.system('git clone https://github.com/caglarturali/catalina-dynamic-wallpaper.git')
 os.system('cp catalina-dynamic-wallpaper/CatalinaDynamic/contents/images/hourly/16.jpg ~/Pictures')
 #os.system('sudo -i')
+
+#os.system('./downloadfiles.sh')
+
 curses.noecho()
 curses.cbreak()
 stdscr.keypad(True)
@@ -46,7 +49,7 @@ def interface():
         c = stdscr.getch()
         if c == ord('i'):
             print("Installing OSx icon theme")
-            os.system('sudo cp -r macOs-icon-theme/ ~/.themes/macOs-icon-theme')
+            os.system('cd WhiteSur-gtk-theme/ && sudo ./install.sh')
         elif c == ord('p'):
             print("Installing OSx gtk theme")
             os.system('sudo cp -r WhiteSur-gtk-theme/ ~/.themes/WhiteSur-gtk-theme')
