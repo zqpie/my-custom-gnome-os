@@ -15,3 +15,7 @@ things it does with no input:
 
 *installs themes to directory the software is running in 
 *installs grub theme to directory the software is running in
+
+
+
+(although this is a python script, most work is done in the bash terminal)
